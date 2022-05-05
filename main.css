@@ -1,0 +1,130 @@
+.hero-image {
+  background-image: url(https://risingstars.mayspace.edu.vn/img/ms_banner_img1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.hero-image-dark {
+  background-image: url(https://risingstars.mayspace.edu.vn/img/ms_banner_img2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+section {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.rounded-5 {
+  border-radius: 1.25rem;
+}
+
+.w-200px {
+  width: 200px;
+}
+
+.h-100px {
+  height: 100px;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.artist-card.add-animation {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.partner-logo {
+  transform: translateX(-100%);
+}
+
+.partner-logo.add-animation {
+  animation: slideLeftToRight 5s forwards;
+}
+.festival-card:first-child.card-1 {
+  position: relative;
+  animation: mymove 5s forwards;
+}
+
+.festival-card:last-child.card-2 {
+  position: relative;
+  animation-delay: 2s;
+  animation: card_2 5s forwards;
+}
+
+@keyframes card_2 {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 800px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 800px;
+  }
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+}
+
+.isMobile {
+  display: none;
+}
+
+.isDesktop {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .isMobile {
+    display: block;
+  }
+
+  .isDesktop {
+    display: none;
+  }
+}
+.swiper-slide {
+    width: 50%;
+    height: 200px;
+    display: block;
+  }
+  
+  /* cell number */
+  .swiper-slide:before {
+    display: block;
+    text-align: center;
+  }
+  
